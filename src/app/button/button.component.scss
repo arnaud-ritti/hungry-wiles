@@ -1,9 +1,21 @@
 .button {
-  @apply rounded-small px-4 py-2;
+  @apply rounded-small px-4 py-2 font-bold transition-all;
   &--primary {
-    @apply bg-primary-400 text-neutral-0 font-bold hover:bg-primary-600 transition-all;
+    background-color: var(--awc-button-primary-bg-color-default);
+    color: var(--awc-button-primary-text-color-default);
+
+    &:hover {
+      background-color: var(--awc-button-primary-bg-color-hover);
+      color: var(--awc-button-primary-text-color-hover);
+    }
   }
   &--secondary {
-    @apply border border-primary-400 text-primary-400 font-bold hover:border-primary-600 hover:text-primary-600 transition-all;
+    border-color: var(--awc-button-primary-bg-color-default);
+    color: var(--awc-button-secondary-text-color-default);
+
+    &:hover {
+      border-color: var(--awc-button-primary-bg-color-hover);
+      color: var(--awc-button-secondary-text-color-hover);
+    }
   }
 }
