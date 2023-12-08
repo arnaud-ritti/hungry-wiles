@@ -1,0 +1,9 @@
+.button {
+  @apply rounded-small px-4 py-2;
+  &--primary {
+    @apply bg-primary-400 text-neutral-0 font-bold hover:bg-primary-600 transition-all;
+  }
+  &--secondary {
+    @apply border border-primary-400 text-primary-400 font-bold hover:border-primary-600 hover:text-primary-600 transition-all;
+  }
+}

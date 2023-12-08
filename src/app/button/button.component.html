@@ -1,1 +1,7 @@
-<p>button works!</p>
+<button [ngClass]="{
+    'button': true,
+    'button--primary': variant == 'primary',
+    'button--secondary': variant == 'secondary',    
+}" [disabled]="disabled" [type]="type" >
+    <ng-content></ng-content>
+</button>

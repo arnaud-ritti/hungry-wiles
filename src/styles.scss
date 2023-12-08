@@ -1,4 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@use "./themes/light";
+@use "./themes/dark";
+
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+:root,
+:host {
+  --awc-button-border-radius: 3px;
+  --awc-button-primary-bg-color-default: #00519e;
+  --awc-colors-primary-950: #07264a;
+  --awc-colors-primary-800: #003f7d;
+  --awc-colors-primary-600: #00519e;
+  --awc-colors-primary-400: #016cd1;
+  --awc-colors-primary-200: #aad9ff;
+  --awc-colors-primary-50: #e6f3ff;
+}
